@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06ccb523-4deb-434f-970c-6f20c200879f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/CoreProto.java" afterPath="$PROJECT_DIR$/src/core/CoreProto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GovorCore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -949,12 +949,12 @@
       <workItem from="1483679436713" duration="1254000" />
       <workItem from="1483716576081" duration="28361000" />
       <workItem from="1483800632162" duration="203000" />
-      <workItem from="1483805966612" duration="175000" />
+      <workItem from="1483805966612" duration="511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115056000" />
+    <option name="totallyTimeSpent" value="115392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
