@@ -1,4 +1,9 @@
 #import struct
+
+//	This is "proxy" pseudo data base, but it works for first time.
+//	Anyway, you can write custom adapter for real data base
+//	using existing DB interface (see core/database for more).
+
 data {
 	123456789 {
 		name: "Henry"
