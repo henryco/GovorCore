@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="GovorCoreFx">
+    <output-path>$PROJECT_DIR$/out/artifacts/GovorCoreFx/bin</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="GovorCore.jar">
+        <element id="module-output" name="GovorCore" />
+        <element id="file-copy" path="$PROJECT_DIR$/Struct.jar" />
+      </element>
+      <element id="artifact" artifact-name="GovorCore:jar" />
+    </root>
+  </artifact>
+</component>

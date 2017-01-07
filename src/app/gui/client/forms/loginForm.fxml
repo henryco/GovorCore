@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.gui.client.controllers.FXLoginController">
+   <children>
+      <Pane id="mainPain" layoutX="12.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="616.0">
+         <children>
+            <Pane id="BackGroundPane" fx:id="imgPane" layoutX="1.0" layoutY="2.0" prefHeight="421.0" prefWidth="616.0">
+               <children>
+                  <ImageView fx:id="animCat" fitHeight="466.0" fitWidth="753.0" layoutX="-80.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@sources/3049187-slide-s-6-10-charming-8-bit-gifs-depicting-every-day-life-in-japan.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="backGroundImage" fx:id="animRain" fitHeight="438.0" fitWidth="762.0" layoutX="-18.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@sources/3049187-slide-s-5-10-charming-8-bit-gifs-depicting-every-day-life-in-japan.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button id="loginButton" fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="474.0" layoutY="319.0" mnemonicParsing="false" opacity="0.85" prefHeight="28.0" prefWidth="75.0" text="SIGN IN" textFill="#2f1065">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <PasswordField id="passwordBox" fx:id="passField" layoutX="298.0" layoutY="319.0" prefHeight="28.0" prefWidth="168.0" />
+            <TextField id="idTextArea" fx:id="textField" layoutX="298.0" layoutY="282.0" prefHeight="28.0" prefWidth="251.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

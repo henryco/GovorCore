@@ -1,0 +1,23 @@
+//Struct file, by @HenryCo since 2k16
+
+#sugar 'string\[\]' "java.lang.String\[\]"
+#sugar ' --> ' .
+#sugar ' -->' .
+#sugar '--> ' .
+#sugar --> .
+#sugar -> , 
+#sugar external ext.file
+#sugar 'new ' imports'::spaces::'
+#sugar \( ' \('
+#sugar 'function \{' 'function: \{'
+#sugar 'function  \{' 'function: \{'
+#sugar 'function ' 'function.'
+#sugar 'function  ' 'function.'
+#sugar '\[\]' _array_of_
+imports: {
+	spaces: {
+		null = 0;
+		void = &null;
+		Void(&void)
+	}
+}
