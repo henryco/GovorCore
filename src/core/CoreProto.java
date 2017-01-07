@@ -5,7 +5,7 @@ package core;
  */
 public interface CoreProto {
 
-	String SPLIT_REG = "×";
+	String SPLIT_REG = "~";
 	String SEND_REG = "SND";
 	String UPD_REG = "UPD";
 	String CLOSE_REG = "CLS";
