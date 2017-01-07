@@ -1,2 +1,3 @@
 #!/bin/bash
-/root/GovorCore/out/artifacts/GovorCoreFx/bin/./RunServer.sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+"$DIR"/bin/./RunServer.sh
