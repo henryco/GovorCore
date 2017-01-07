@@ -33,7 +33,6 @@ public class FXClientManager implements FXClientBehavior {
 			client.close();
 			System.exit(0);
 		});
-		this.setLoginScene();
 	}
 
 	@Override

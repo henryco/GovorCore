@@ -37,7 +37,7 @@ public class Main extends Application {
 		ServerConnector.debug = config.serverDebug;
 
 		if (config.isClientMode())
-			new FXClientManager(primaryStage, new ClientCore(config.server), config.guiTitle);
+			new FXClientManager(primaryStage, new ClientCore(config.server), config.guiTitle).setLoginScene();
 		else new ConsoleServer(config).startServer();
 	}
 
