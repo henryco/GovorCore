@@ -1,6 +1,7 @@
 package app.gui.client.controllers;
 
 import core.connection.BaseClient;
+import core.utils.Utils;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -35,13 +36,7 @@ public class FXLoginController extends FXClientController {
 			String pass = passField.getText();
 			String uid = textField.getText();
 
-			boolean isNumb = true;
-			try {
-				Integer.parseInt(uid);
-
-			} catch (Exception eg) {
-				isNumb = false;
-			}
+			boolean isNumb = Utils.checkNumb(uid);
 
 			if (uid.length() == 9 && isNumb) {
 				String[] connector = client.setUID(uid).connect(pass).getInfo(uid);

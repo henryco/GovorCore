@@ -1,5 +1,6 @@
 package app.gui.client.controllers;
 
+import core.utils.Utils;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -26,8 +27,11 @@ public class FXAddController extends FXClientController {
 				}
 			}
 			if (runFlag) {
-				client.addUser(addUidField.getText());
-				aborter.abort();
+				String sUid = addUidField.getText();
+				if (Utils.checkNumb(sUid) && sUid.length() == 9) {
+					client.addUser(sUid);
+					aborter.abort();
+				}
 			}
 		});
 		return this;

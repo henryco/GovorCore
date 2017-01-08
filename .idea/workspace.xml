@@ -7,46 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06ccb523-4deb-434f-970c-6f20c200879f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/gui/client/controllers/FXAddController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/gui/client/forms/addForm.fxml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GovorCore/core/CoreProto.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/core/CoreProto.java" afterPath="$PROJECT_DIR$/src/core/CoreProtocol.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Struct.jar" afterPath="$PROJECT_DIR$/Struct.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.struct" afterPath="$PROJECT_DIR$/config.struct" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GovorCoreFx/bin/GovorCore.jar" afterPath="$PROJECT_DIR$/out/artifacts/GovorCoreFx/bin/GovorCore.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GovorCoreFx/bin/Struct.jar" afterPath="$PROJECT_DIR$/out/artifacts/GovorCoreFx/bin/Struct.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GovorCore_jar/GovorCore.jar" afterPath="$PROJECT_DIR$/out/artifacts/GovorCore_jar/GovorCore.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/FXClientSceneFactory.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/FXClientSceneFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/controllers/FXClientController.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/controllers/FXClientController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/controllers/FXLoginController.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/controllers/FXLoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/controllers/FXMainController$CONTACT_PANEL.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/controllers/FXMainController$CONTACT_PANEL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/controllers/FXMainController.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/controllers/FXMainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/sceneLogic/FXClientBehavior.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/sceneLogic/FXClientBehavior.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/sceneLogic/FXClientManager$CONTROLLER.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/sceneLogic/FXClientManager$CONTROLLER.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/sceneLogic/FXClientManager.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/sceneLogic/FXClientManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/core/ClientCore.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/core/ClientCore.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/core/connection/BaseClient.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/core/connection/BaseClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/core/connection/behavior/ConnectBehavior.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/core/connection/behavior/ConnectBehavior.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/core/connection/behavior/StdBehavior.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/core/connection/behavior/StdBehavior.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/core/database/IBase.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/core/database/IBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/core/database/StructBaseTemp.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/core/database/StructBaseTemp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/core/utils/Utils.class" afterPath="$PROJECT_DIR$/out/production/GovorCore/core/utils/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GovorCoreFx/bin/GovorCore.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/GovorCoreFx/bin/GovorCore.jnlp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/forms/mainForm.fxml" afterPath="$PROJECT_DIR$/out/production/GovorCore/app/gui/client/forms/mainForm.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/gui/client/FXClientSceneFactory.java" afterPath="$PROJECT_DIR$/src/app/gui/client/FXClientSceneFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/gui/client/controllers/FXClientController.java" afterPath="$PROJECT_DIR$/src/app/gui/client/controllers/FXClientController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/gui/client/controllers/FXAddController.java" afterPath="$PROJECT_DIR$/src/app/gui/client/controllers/FXAddController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/gui/client/controllers/FXLoginController.java" afterPath="$PROJECT_DIR$/src/app/gui/client/controllers/FXLoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/gui/client/controllers/FXMainController.java" afterPath="$PROJECT_DIR$/src/app/gui/client/controllers/FXMainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/gui/client/forms/mainForm.fxml" afterPath="$PROJECT_DIR$/src/app/gui/client/forms/mainForm.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/gui/client/sceneLogic/FXClientBehavior.java" afterPath="$PROJECT_DIR$/src/app/gui/client/sceneLogic/FXClientBehavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/gui/client/sceneLogic/FXClientManager.java" afterPath="$PROJECT_DIR$/src/app/gui/client/sceneLogic/FXClientManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/ClientCore.java" afterPath="$PROJECT_DIR$/src/core/ClientCore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/connection/BaseClient.java" afterPath="$PROJECT_DIR$/src/core/connection/BaseClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/connection/behavior/ConnectBehavior.java" afterPath="$PROJECT_DIR$/src/core/connection/behavior/ConnectBehavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/connection/behavior/StdBehavior.java" afterPath="$PROJECT_DIR$/src/core/connection/behavior/StdBehavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/database/IBase.java" afterPath="$PROJECT_DIR$/src/core/database/IBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/database/StructBaseTemp.java" afterPath="$PROJECT_DIR$/src/core/database/StructBaseTemp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/utils/Utils.java" afterPath="$PROJECT_DIR$/src/core/utils/Utils.java" />
     </list>
     <ignored path="GovorCore.iws" />
@@ -90,18 +52,18 @@
       <file leaf-file-name="FXMainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/gui/client/controllers/FXMainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
+            <state relative-caret-position="2360">
               <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FXAddController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FXAddController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/gui/client/controllers/FXAddController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+            <state relative-caret-position="620">
+              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,8 +74,8 @@
       <file leaf-file-name="FXLoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/gui/client/controllers/FXLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="420">
+              <caret line="38" column="49" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FXClientManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FXClientManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/gui/client/sceneLogic/FXClientManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
+            <state relative-caret-position="645">
               <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
               <folding />
             </state>
@@ -248,12 +210,12 @@
         <option value="$PROJECT_DIR$/src/core/ClientCore.java" />
         <option value="$PROJECT_DIR$/src/core/connection/behavior/ConnectBehavior.java" />
         <option value="$PROJECT_DIR$/src/core/connection/behavior/StdBehavior.java" />
-        <option value="$PROJECT_DIR$/src/core/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/core/database/StructBaseTemp.java" />
-        <option value="$PROJECT_DIR$/src/app/gui/client/controllers/FXLoginController.java" />
-        <option value="$PROJECT_DIR$/src/app/gui/client/controllers/FXAddController.java" />
         <option value="$PROJECT_DIR$/src/app/gui/client/controllers/FXMainController.java" />
         <option value="$PROJECT_DIR$/src/app/gui/client/sceneLogic/FXClientManager.java" />
+        <option value="$PROJECT_DIR$/src/core/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/app/gui/client/controllers/FXLoginController.java" />
+        <option value="$PROJECT_DIR$/src/app/gui/client/controllers/FXAddController.java" />
       </list>
     </option>
   </component>
@@ -303,7 +265,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -634,8 +598,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1125,11 +1087,12 @@
       <workItem from="1483805966612" duration="565000" />
       <workItem from="1483829208692" duration="17388000" />
       <workItem from="1483847303958" duration="677000" />
+      <workItem from="1483892713935" duration="436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133511000" />
+    <option name="totallyTimeSpent" value="133947000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1151,8 +1114,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27076924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2704591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1205,13 +1168,13 @@
     <entry file="file://$PROJECT_DIR$/src/app/console/client/panels/ContactsPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/app/console/ConsoleClient.java" />
     <entry file="file://$PROJECT_DIR$/src/app/gui/client/forms/loginForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
@@ -1311,26 +1274,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/gui/client/forms/mainForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/gui/client/forms/sources/test.java" />
     <entry file="file://$PROJECT_DIR$/src/app/gui/client/forms/addForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/gui/client/FXClientSceneFactory.java">
@@ -1395,17 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="133" column="26" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
-          <folding>
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3511#3512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/database/IBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1444,39 +1396,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/gui/client/controllers/FXLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/gui/client/controllers/FXMainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
+        <state relative-caret-position="2360">
           <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/gui/client/controllers/FXAddController.java">
+    <entry file="file://$PROJECT_DIR$/src/app/gui/client/sceneLogic/FXClientManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="645">
+          <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="135" column="35" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="35" />
+          <folding>
+            <element signature="e#3455#3456#0" expanded="true" />
+            <element signature="e#3511#3512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/gui/client/controllers/FXLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" column="49" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/gui/client/sceneLogic/FXClientManager.java">
+    <entry file="file://$PROJECT_DIR$/src/app/gui/client/controllers/FXAddController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="620">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

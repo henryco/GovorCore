@@ -133,5 +133,13 @@ public final class Utils {
 	public static boolean arrContainsInt(String[] arr, int val) {
 		return arrContainsStr(arr, Integer.toString(val));
 	}
+	public static boolean checkNumb(String n) {
+		try {
+			Integer.parseInt(n);
+		} catch (Exception eg) {
+			return false;
+		}
+		return true;
+	}
 }
 
