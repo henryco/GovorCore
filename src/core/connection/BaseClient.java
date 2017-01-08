@@ -1,14 +1,14 @@
 package core.connection;
 
 
-import core.CoreProto;
+import core.CoreProtocol;
 
 import java.util.List;
 
 /**
  * @author Henry on 01/01/17.
  */
-public interface BaseClient extends CoreProto {
+public interface BaseClient extends CoreProtocol {
 
 
 	boolean isConnected();
@@ -19,6 +19,7 @@ public interface BaseClient extends CoreProto {
 	BaseClient setUID(String uid);
 	BaseClient connect(String password);
 	BaseClient setConnected(boolean connected);
+	BaseClient addUser(String uid);
 
 	List<String[]> update();
 	List<String[]> getStatus();

@@ -6,7 +6,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Pane;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -17,20 +16,14 @@ import java.util.Random;
 public class FXLoginController extends FXClientController {
 
 	@FXML private PasswordField passField;
-	@FXML private Pane imgPane;
 	@FXML private Button loginButton;
 	@FXML private TextField textField;
 	@FXML private ImageView animRain;
 	@FXML private ImageView animCat;
 
-	@FXML void initialize() {
-		assert passField != null : "fx:id=\"passField\" was not injected: check your FXML file 'LOGIN_SCENE.fxml'.";
-		assert imgPane != null : "fx:id=\"imgPane\" was not injected: check your FXML file 'LOGIN_SCENE.fxml'.";
-		assert loginButton != null : "fx:id=\"loginButton\" was not injected: check your FXML file 'LOGIN_SCENE.fxml'.";
-		assert textField != null : "fx:id=\"textField\" was not injected: check your FXML file 'LOGIN_SCENE.fxml'.";
-		assert animCat != null : "fx:id=\"animCat\" was not injected: check your FXML file 'LOGIN_SCENE.fxml'.";
-		assert animRain != null : "fx:id=\"animRain\" was not injected: check your FXML file 'LOGIN_SCENE.fxml'.";
 
+	@Override
+	public FXClientController action() {
 
 		new ImageView[]{animRain, animCat}
 				[new int[]{0,1,1,0,0,1,1,0,1,0,1,0}
@@ -42,18 +35,30 @@ public class FXLoginController extends FXClientController {
 			String pass = passField.getText();
 			String uid = textField.getText();
 
-			String[] connector = client.setUID(uid).connect(pass).getInfo(uid);
+			boolean isNumb = true;
 			try {
-				System.out.println(Arrays.toString(connector));
-			} catch (Exception ex) {
-				aborter.abort();
+				Integer.parseInt(uid);
+
+			} catch (Exception eg) {
+				isNumb = false;
 			}
 
-			if (!connector[0].equalsIgnoreCase(BaseClient.ABORT_REG)) {
-				behavior.setMainScene();
-			} else aborter.abort();
+			if (uid.length() == 9 && isNumb) {
+				String[] connector = client.setUID(uid).connect(pass).getInfo(uid);
+				try {
+					System.out.println(Arrays.toString(connector));
+				} catch (Exception ex) {
+					aborter.abort("SERVER NOT FOUND");
+				}
+
+				if (!connector[0].equalsIgnoreCase(BaseClient.ABORT_REG)) {
+					behavior.setMainScene();
+				} else aborter.abort("SERVER NOT FOUND");
+			}
+
+
 		});
+
+		return this;
 	}
-
-
 }

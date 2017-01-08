@@ -23,7 +23,7 @@ Enter {
 		guiTitle "SKChat"
 		serverDebug false
 	}
-	Config.package: "app.conf"
+	Config.package: "conf"
 }
 
 

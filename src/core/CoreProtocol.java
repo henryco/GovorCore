@@ -3,7 +3,7 @@ package core;
 /**
  * @author Henry on 07/01/17.
  */
-public interface CoreProto {
+public interface CoreProtocol {
 
 	String SPLIT_REG = "~";
 	String SEND_REG = "SND";
@@ -17,5 +17,6 @@ public interface CoreProto {
 	String STRANGER = "STR";
 	String OFFLINE = "OFFLINE";
 	String ONLINE = "ONLINE";
+	String ADD_CONTACT = "ADD";
 
 }

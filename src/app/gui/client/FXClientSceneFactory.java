@@ -14,6 +14,7 @@ public class FXClientSceneFactory {
 
 	public static final String LOGIN_SCENE = "forms/loginForm.fxml";
 	public static final String MAIN_SCENE = "forms/mainForm.fxml";
+	public static final String ADD_UID = "forms/addForm.fxml";
 
 	public static FXClientController createScene(BaseClient client, FXClientBehavior clientBehavior, String url) throws Exception {
 		FXMLLoader loader = new FXMLLoader(FXClientSceneFactory.class.getResource(url));

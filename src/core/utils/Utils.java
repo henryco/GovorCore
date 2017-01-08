@@ -126,5 +126,12 @@ public final class Utils {
 		return retList;
 	}
 
+	public static boolean arrContainsStr(String[] arr, String val) {
+		for (String s : arr) if (s.equalsIgnoreCase(val)) return true;
+		return false;
+	}
+	public static boolean arrContainsInt(String[] arr, int val) {
+		return arrContainsStr(arr, Integer.toString(val));
+	}
 }
 

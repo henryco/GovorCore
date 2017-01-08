@@ -10,10 +10,7 @@ import javafx.stage.Stage;
  */
 public class FXClientManager implements FXClientBehavior {
 
-	private Stage stage;
-	private CONTROLLER CONTROLLER;
 	private final class CONTROLLER {
-
 		private final FXClientController login;
 		private final FXClientController main;
 
@@ -22,11 +19,18 @@ public class FXClientManager implements FXClientBehavior {
 			main = FXClientSceneFactory.createScene(client, clientBehavior, FXClientSceneFactory.MAIN_SCENE);
 		}
 	}
+
+	private Stage stage;
+	private CONTROLLER controller;
+	private BaseClient client;
 	private FXClientController actualScene;
 
+
+
 	public FXClientManager(Stage stage, BaseClient client, String title) throws Exception {
-		this.CONTROLLER = new CONTROLLER(client, this);
+		this.controller = new CONTROLLER(client, this);
 		this.stage = stage;
+		this.client = client;
 		this.stage.setTitle(title);
 		this.stage.setResizable(false);
 		stage.setOnCloseRequest(event -> {
@@ -35,27 +39,61 @@ public class FXClientManager implements FXClientBehavior {
 		});
 	}
 
+
 	@Override
 	public FXClientBehavior setLoginScene() {
-		return setScene(CONTROLLER.login);
+		return setScene(controller.login);
 	}
+
+
 
 	@Override
 	public FXClientBehavior setMainScene() {
-		return setScene(CONTROLLER.main);
+		return setScene(controller.main);
 	}
+
+
+
+	@Override
+	public FXClientBehavior createAddUidDialog() {
+		try {
+			Stage dialog = new Stage();
+			dialog.setScene(FXClientSceneFactory.createScene(client, this, FXClientSceneFactory.ADD_UID).action()
+					.setOnAbort(abortMessage -> {
+						dialog.close();
+						try {
+							controller = new CONTROLLER(client, this);
+							setMainScene();
+						} catch (Exception e) {
+							System.err.println("GUI RELOAD RUNTIME FATAL ERROR");
+							client.close();
+							System.exit(0);
+						}
+					}).getScene());
+			dialog.setResizable(false);
+			dialog.show();
+		} catch (Exception ignore) {}
+		return this;
+	}
+
+
 
 	private void closeScene() {
 		if (actualScene != null) actualScene.close();
 	}
 
+
+
 	private FXClientBehavior setScene(FXClientController scene) {
 		closeScene();
 		actualScene = scene;
 		stage.setScene(scene.action().getScene());
+		stage.setResizable(false);
 		stage.show();
 		return this;
 	}
+
+
 
 	public Stage getStage() {
 		return stage;

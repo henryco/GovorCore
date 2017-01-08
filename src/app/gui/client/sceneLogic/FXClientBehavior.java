@@ -8,5 +8,6 @@ public interface FXClientBehavior {
 
 	FXClientBehavior setLoginScene();
 	FXClientBehavior setMainScene();
+	FXClientBehavior createAddUidDialog();
 
 }

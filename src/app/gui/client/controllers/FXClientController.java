@@ -32,13 +32,11 @@ public abstract class FXClientController {
 		this.scene = scene;
 		return this;
 	}
-	public FXClientController setAbortAction(FXClientAborter aborter) {
+	public FXClientController setOnAbort(FXClientAborter aborter) {
 		this.aborter = aborter;
 		return this;
 	}
-	public FXClientController action() {
-		return this;
-	}
+	public abstract FXClientController action();
 	public FXClientController close() {
 		return this;
 	}

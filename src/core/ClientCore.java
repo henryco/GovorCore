@@ -103,9 +103,15 @@ public class ClientCore implements BaseClient {
 
 
 
-
 	@Override public synchronized BaseClient setUID(String uid) {
 		this.uid = new Utils.UID(uid);
+		return this;
+	}
+
+
+	@Override public synchronized BaseClient addUser(String uid) {
+		Utils.closeNFlushStream(Utils.writeToStream(ADD_CONTACT + SPLIT_REG
+				+ this.uid.string + SPLIT_REG + uid, socket));
 		return this;
 	}
 }

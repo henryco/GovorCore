@@ -6,7 +6,9 @@ import javafx.fxml.FXML;
 import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.control.*;
-import javafx.scene.layout.*;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 
@@ -78,6 +80,7 @@ public class FXMainController extends FXClientController {
 	@FXML private SplitPane splitPane;
 	@FXML private Label nameLabel;
 	@FXML private Label userLabel;
+	@FXML private Button addContact;
 
 
 	private final Map<String, CONTACT_PANEL> contactsMap = new HashMap<>();
@@ -122,11 +125,14 @@ public class FXMainController extends FXClientController {
 				String color = netStat ? "GREEN" : "RED";
 				double opacity = !netRange ? (netStat ? 1 : 0.5) : 0.25;
 
-				panel.contactPane.setOpacity(opacity);
-				Label label = ((Label) panel.contactPane.getChildren().get(0));
-				if (!netRange) label.setTextFill(Paint.valueOf(color));
-				panel.friend = !netRange;
+				//FIXME NullPointer after increase list
 
+				if (panel != null) {
+					panel.contactPane.setOpacity(opacity);
+					Label label = ((Label) panel.contactPane.getChildren().get(0));
+					if (!netRange) label.setTextFill(Paint.valueOf(color));
+					panel.friend = !netRange;
+				}
 				if (actualUID != null && !stopFlag[0]) {
 					boolean colorize = netStat && UID.equalsIgnoreCase(actualUID);
 					String moreColor = !netRange ? (colorize ? "GREEN" : "RED") : "BLACK";
@@ -150,6 +156,10 @@ public class FXMainController extends FXClientController {
 		} catch (Exception e) {
 			aborter.abort("Connection lost");
 		}
+		addContact.setOnAction(event -> {
+			behavior.createAddUidDialog();
+			//TODO ADD USER TO CONTACT PANEL
+		});
 
 		loadContactsPanel();
 		new Thread(() -> {
@@ -171,6 +181,8 @@ public class FXMainController extends FXClientController {
 		return this;
 	}
 
+
+
 	@Override
 	public FXClientController close() {
 		this.screenActive = false;
@@ -189,6 +201,7 @@ public class FXMainController extends FXClientController {
 			panelList.add(panel.contactPane);
 			if (!contactsMap.containsKey(UID)) contactsMap.put(UID, panel);
 		});
+		//new VBox(
 		scrollPane.setContent(new VBox(panelList.toArray(new Pane[0])));
 		return this;
 	}
