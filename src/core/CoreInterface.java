@@ -3,7 +3,7 @@ package core;
 /**
  * @author Henry on 07/01/17.
  */
-public interface CoreProtocol {
+public interface CoreInterface {
 
 	String SPLIT_REG = "~";
 	String SEND_REG = "SND";

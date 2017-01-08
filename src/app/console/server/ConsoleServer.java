@@ -12,11 +12,12 @@ public class ConsoleServer {
 	private Config config;
 
 	public ConsoleServer(Config config) {
-		this(config.dataBase.type, config.dataBase.url);
+		this(config.dataBase.type, config.dataBase.url, config.serverPort);
 		setConfig(config);
 	}
-	public ConsoleServer(String dataBaseType, String dataBaseFile) {
-		serverCore = new ServerCore().loadDataBase(dataBaseType, dataBaseFile);
+	public ConsoleServer(String dataBaseType, String dataBaseFile, int port) {
+		serverCore = new ServerCore(port).loadDataBase(dataBaseType, dataBaseFile);
+
 	}
 	public ConsoleServer setConfig(Config config) {
 		this.config = config;

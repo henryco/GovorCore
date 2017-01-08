@@ -1,11 +1,11 @@
 package core.database;
 
-import core.CoreProtocol;
+import core.CoreInterface;
 
 /**
  * @author Henry on 31/12/16.
  */
-public interface IBase extends CoreProtocol {
+public interface IBase extends CoreInterface {
 
 	String[] readUserData(int uid);
 	String[] popMessages(int uid);

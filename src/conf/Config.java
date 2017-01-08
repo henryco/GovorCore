@@ -19,12 +19,11 @@ public class Config {
 		}
 	}
 	public DataBase dataBase;
-	public String wellcomeMessage = "";
 	public boolean serverDebug = false;
+	public String wellcomeMessage = "";
 	public String mode = "client"; // "server"
 	public String guiTitle = "";
-	//public boolean showDataBase = false;
-
+	public int serverPort = 80;
 
 
 	public Config(String mode, String text) {
@@ -43,7 +42,9 @@ public class Config {
 	public boolean isClientMode() {
 		return mode.equalsIgnoreCase("client");
 	}
-
+	public void setServerPort(int port) {
+		this.serverPort = port;
+	}
 
 	/**
 	 * <b>START ARGS:</b> <br><br>

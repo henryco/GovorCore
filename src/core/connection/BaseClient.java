@@ -1,14 +1,14 @@
 package core.connection;
 
 
-import core.CoreProtocol;
+import core.CoreInterface;
 
 import java.util.List;
 
 /**
  * @author Henry on 01/01/17.
  */
-public interface BaseClient extends CoreProtocol {
+public interface BaseClient extends CoreInterface {
 
 
 	boolean isConnected();

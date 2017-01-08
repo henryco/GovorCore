@@ -17,6 +17,7 @@ Enter {
 	Config --> function {
 		setDataBase([string, "struct"], [string, "tempData.struct"]);
 		setIP([string, "127.0.0.1"], [string, "80"]);
+		setServerPort([int, 80]);
 	}
 	Config --> field {
 		wellcomeMessage = "MACINTOSH PLUS - リサフランク420 / 現代のコンピュー" 
