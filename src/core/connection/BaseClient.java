@@ -5,9 +5,7 @@ import core.CoreInterface;
 
 import java.util.List;
 
-/**
- * @author Henry on 01/01/17.
- */
+
 public interface BaseClient extends CoreInterface {
 
 

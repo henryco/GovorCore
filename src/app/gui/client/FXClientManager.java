@@ -1,13 +1,11 @@
-package app.gui.client.sceneLogic;
+package app.gui.client;
 
-import app.gui.client.FXClientSceneFactory;
 import app.gui.client.controllers.FXClientController;
+import app.gui.client.sceneLogic.FXClientBehavior;
 import core.connection.BaseClient;
 import javafx.stage.Stage;
 
-/**
- * @author Henry on 04/01/17.
- */
+
 public class FXClientManager implements FXClientBehavior {
 
 	private final class CONTROLLER {

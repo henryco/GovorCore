@@ -2,9 +2,7 @@ package core.database;
 
 import core.CoreInterface;
 
-/**
- * @author Henry on 31/12/16.
- */
+
 public interface IBase extends CoreInterface {
 
 	String[] readUserData(int uid);

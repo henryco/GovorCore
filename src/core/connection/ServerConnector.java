@@ -10,10 +10,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.function.Consumer;
 
-/**
- * @author Henry on 01/01/17.
- */
+
 public class ServerConnector extends Thread {
 
 	public static boolean debug = false;
@@ -24,10 +23,16 @@ public class ServerConnector extends Thread {
 	private IBase dataBase;
 	private Utils.UID uid;
 	private ConnectBehavior behavior = new StdBehavior();
+	private Consumer<String> optionalMessageAction;
+
 
 	public ServerConnector(Socket socket, IBase dataBase) {
+		this(socket, dataBase, null);
+	}
+	public ServerConnector(Socket socket, IBase dataBase, Consumer<String> optionalMessageAction) {
 		this.socket = socket;
 		this.dataBase = dataBase;
+		this.optionalMessageAction = optionalMessageAction;
 	}
 
 	@Override
@@ -46,11 +51,13 @@ public class ServerConnector extends Thread {
 
 	public ServerConnector forceClose() {
 		connection = false;
+		if (optionalMessageAction != null && uid != null)
+			optionalMessageAction.accept("> " + this.uid.string + " disconnected");
 		return this;
 	}
 
 	public boolean login(String[] args) {
-		if (!logged)
+		if (!logged) {
 			try {
 				int uid = Integer.parseInt(args[0]);
 				int pass = Integer.parseInt(args[1]);
@@ -61,6 +68,8 @@ public class ServerConnector extends Thread {
 			} catch (Exception exp) {
 				forceClose();
 			}
+			if (optionalMessageAction != null) optionalMessageAction.accept("> " + this.uid.string + " connected");
+		}
 		return logged;
 	}
 

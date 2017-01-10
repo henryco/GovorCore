@@ -125,8 +125,6 @@ public class FXMainController extends FXClientController {
 				String color = netStat ? "GREEN" : "RED";
 				double opacity = !netRange ? (netStat ? 1 : 0.5) : 0.25;
 
-				//FIXME NullPointer after increase list
-
 				if (panel != null) {
 					panel.contactPane.setOpacity(opacity);
 					Label label = ((Label) panel.contactPane.getChildren().get(0));

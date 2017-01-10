@@ -7,9 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.List;
 
-/**
- * @author Henry on 01/01/17.
- */
+
 public class ClientCore implements BaseClient {
 
 	private boolean connected = false;
@@ -80,14 +78,10 @@ public class ClientCore implements BaseClient {
 	}
 
 
-
-
 	@Override public synchronized String[] getInfo(String uid) {
 		Utils.closeNFlushStream(Utils.writeToStream(INFO_REG + SPLIT_REG + uid, socket));
 		return Utils.readLineFromStream(socket).split(SPLIT_REG);
 	}
-
-
 
 
 	@Override public synchronized String getUID() {
@@ -96,11 +90,9 @@ public class ClientCore implements BaseClient {
 
 
 
-
 	@Override public synchronized List<String[]> getStatus() {
 		return Utils.getDataList(socket, STAT_REG, STOP_REG, SPLIT_REG);
 	}
-
 
 
 	@Override public synchronized BaseClient setUID(String uid) {

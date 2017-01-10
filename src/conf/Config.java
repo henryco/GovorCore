@@ -21,7 +21,7 @@ public class Config {
 	public DataBase dataBase;
 	public boolean serverDebug = false;
 	public String wellcomeMessage = "";
-	public String mode = "client"; // "server"
+	public String mode = "client"; // "server" || "server-gui"
 	public String guiTitle = "";
 	public int serverPort = 80;
 
@@ -42,6 +42,13 @@ public class Config {
 	public boolean isClientMode() {
 		return mode.equalsIgnoreCase("client");
 	}
+	public boolean isServerConsMode() {
+		return mode.equalsIgnoreCase("server");
+	}
+	public boolean isServerGuiMode() {
+		return mode.equalsIgnoreCase("server-gui");
+	}
+
 	public void setServerPort(int port) {
 		this.serverPort = port;
 	}

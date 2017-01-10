@@ -6,9 +6,7 @@ import net.henryco.struct.container.tree.StructTree;
 
 import java.util.*;
 
-/**
- * @author Henry on 31/12/16.
- */
+
 public class StructBaseTemp implements IBase {
 
 	private static final String[] nickNames = new String[]{"name", "user", "nick", "nickname", "nickName", "0"};

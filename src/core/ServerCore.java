@@ -6,10 +6,9 @@ import core.utils.Utils;
 
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.function.Consumer;
 
-/**
- * @author Henry on 31/12/16.
- */
+
 public class ServerCore {
 
 	public String WELLCOME_MESSAGE = "";
@@ -31,13 +30,16 @@ public class ServerCore {
 	}
 
 	public ServerCore startServer() {
+		return startServer(null);
+	}
+	public ServerCore startServer(Consumer<String> optionalMessageAction) {
 
 		serverSocket = Utils.createServerSocket(port);
 		status = true;
 		new Thread(() -> {
 			while (status) {
 				Socket handleSocket = Utils.acceptSocket(serverSocket);
-				ServerConnector connection = new ServerConnector(handleSocket, dataBase);
+				ServerConnector connection = new ServerConnector(handleSocket, dataBase, optionalMessageAction);
 				connection.start();
 			}
 			Utils.closeServerSocket(serverSocket);

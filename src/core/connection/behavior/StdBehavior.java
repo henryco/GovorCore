@@ -8,9 +8,7 @@ import java.io.BufferedReader;
 import java.io.PrintWriter;
 import java.util.Arrays;
 
-/**
- * @author Henry on 01/01/17.
- */
+
 public class StdBehavior implements ConnectBehavior {
 
 	/*
@@ -36,6 +34,7 @@ public class StdBehavior implements ConnectBehavior {
 		String line = in.readLine();
 		if (line != null) {
 			String[] dataIn = line.split(SPLIT_REG);
+
 			if (debug) System.out.println(Arrays.toString(dataIn));
 
 			if (connector.login(dataIn) && dataIn.length > 0) {

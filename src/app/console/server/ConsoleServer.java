@@ -3,6 +3,8 @@ package app.console.server;
 import conf.Config;
 import core.ServerCore;
 
+import java.util.function.Consumer;
+
 /**
  * @author Henry on 01/01/17.
  */
@@ -24,9 +26,12 @@ public class ConsoleServer {
 		serverCore.WELLCOME_MESSAGE = config.wellcomeMessage;
 		return this;
 	}
-	public ConsoleServer startServer() {
-		serverCore.startServer();
+	public ConsoleServer startServer(Consumer<String> action) {
+		serverCore.startServer(action);
 		return this;
+	}
+	public ConsoleServer startServer() {
+		return startServer(System.out::println);
 	}
 	public ConsoleServer stopServer() {
 		serverCore.closeServer();

@@ -1,8 +1,6 @@
 package core;
 
-/**
- * @author Henry on 07/01/17.
- */
+
 public interface CoreInterface {
 
 	String SPLIT_REG = "~";

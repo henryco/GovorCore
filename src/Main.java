@@ -1,6 +1,7 @@
+import app.gui.server.FXServer;
 import conf.Config;
 import app.console.server.ConsoleServer;
-import app.gui.client.sceneLogic.FXClientManager;
+import app.gui.client.FXClientManager;
 import core.ClientCore;
 import core.connection.ServerConnector;
 import javafx.application.Application;
@@ -38,7 +39,8 @@ public class Main extends Application {
 
 		if (config.isClientMode())
 			new FXClientManager(primaryStage, new ClientCore(config.server), config.guiTitle).setLoginScene();
-		else new ConsoleServer(config).startServer();
+		else if (config.isServerConsMode()) new ConsoleServer(config).startServer();
+		else if (config.isServerGuiMode()) new FXServer(primaryStage, config);
 	}
 
 	public static void main(String ... args) {
