@@ -36,7 +36,7 @@ public class Main extends Application {
 		Config config = new StructTree(prefix + defName).mainNode.getPath(defPath).instanceAndInvokeObject(null, true, true);
 		config.inLineInit(args);
 		ServerConnector.debug = config.serverDebug;
-
+		
 		if (config.isClientMode())
 			new FXClientManager(primaryStage, new ClientCore(config.server), config.guiTitle).setLoginScene();
 		else if (config.isServerConsMode()) new ConsoleServer(config).startServer();

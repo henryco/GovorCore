@@ -91,6 +91,7 @@ public class StdBehavior implements ConnectBehavior {
 				}
 
 
+				
 				else if (flag.equalsIgnoreCase(ADD_CONTACT)) {
 					int uidFrom = Integer.parseInt(dataIn[1]);
 					int uidWho = Integer.parseInt(dataIn[2]);
