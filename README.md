@@ -7,4 +7,4 @@
 </h5>
 <br>
 <br>
-![img](https://raw.githubusercontent.com/henryco/GovorCore/master/promo/promo.png)
+
