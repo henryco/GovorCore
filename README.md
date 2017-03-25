@@ -5,6 +5,5 @@
 <br><br>
 <a href="https://drive.google.com/open?id=0BzwCB78J-oVxVVk0aUxnZmZwaWs">Doc (PL)</a>
 </h5><br>
-![promo](https://raw.githubusercontent.com/henryco/GovorCore/master/promo/promo.png)
 <br>
 
