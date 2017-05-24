@@ -1,4 +1,4 @@
-# GovorCore [![codebeat badge](https://codebeat.co/badges/784389be-ef7d-472f-b9fc-218362ed4346)](https://codebeat.co/projects/github-com-henryco-govorcore-master)
+# GovorCore <br>[![codebeat badge](https://codebeat.co/badges/784389be-ef7d-472f-b9fc-218362ed4346)](https://codebeat.co/projects/github-com-henryco-govorcore-master)
 <h3> Simple server/client chat app, based on java8, jfx2 and <a href="https://github.com/henryco/Struct"> struct</a>.</h3>
 <h5>
 <a href="https://drive.google.com/open?id=0BzwCB78J-oVxaVZ1Q2VtaGVDQkE" title="(latest version from: 22.01.2017)">Download</a>
